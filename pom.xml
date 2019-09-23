@@ -45,8 +45,18 @@
   		<version>6.0</version>
   		<scope>provided</scope>
   	</dependency>
-   <!-- https://mvnrepository.com/artifact/com.ibm/icu -->
-<dependency>
+    </dependencies>
+    
+    <dependencies>
+
+<repositories>
+    <repository>
+      <id>my-internal-site</id>
+      <url>https://mvnrepository.com/artifact/com.ibm/icu</url>
+    </repository>
+    </repositories>
+    
+    <dependency>
     <groupId>com.ibm</groupId>
     <artifactId>icu</artifactId>
     <version>4.4.2</version>
