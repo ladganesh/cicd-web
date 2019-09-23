@@ -23,6 +23,14 @@
       </plugin>
     </plugins>
   </build>
+  
+  <repositories>
+    <repository>
+      <id>my-internal-site</id>
+      <url>https://trixware.s3.ap-south-1.amazonaws.com</url>
+    </repository>
+    </repositories>
+    
   <dependencies>
   	<dependency>
   		<groupId>org.apache.poi</groupId>
@@ -45,18 +53,7 @@
   		<version>6.0</version>
   		<scope>provided</scope>
   	</dependency>
-    </dependencies>
-    
-    <dependencies>
-
-<repositories>
-    <repository>
-      <id>my-internal-site</id>
-      <url>https://mvnrepository.com/artifact/com.ibm/icu</url>
-    </repository>
-    </repositories>
-    
-    <dependency>
+<dependency>
     <groupId>com.ibm</groupId>
     <artifactId>icu</artifactId>
     <version>4.4.2</version>
