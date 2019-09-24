@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"  
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+version="3.0">
+<welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+    <servlet>
+        <servlet-name>MachineTable</servlet-name>
+        <servlet-class>com.prodezy.machine.MachineTable</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MachineTable</servlet-name>
+        <url-pattern>/mchin.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CustomerTable</servlet-name>
+        <servlet-class>com.prodezy.customer.CustomerTable</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerTable</servlet-name>
+        <url-pattern>/customer.do</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>PlantTable</servlet-name>
+        <servlet-class>com.prodezy.plantmaster.PlantTable</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>PlantTable</servlet-name>
+        <url-pattern>/Plant.do</url-pattern>
+    </servlet-mapping>
+  
+   <servlet>
+        <servlet-name>Dietable</servlet-name>
+        <servlet-class>com.prodezy.diemaster.Dietable</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>Dietable</servlet-name>
+        <url-pattern>/DieMaster.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>EmpTable</servlet-name>
+    	<servlet-class>com.prodezy.employee.EmpTable</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>EmpTable</servlet-name>
+    <url-pattern>/Emptable.do</url-pattern>
+    </servlet-mapping>
+      <servlet>
+    	<servlet-name>RmAPIData</servlet-name>
+    	<servlet-class>com.prodezy.rawmaterial.RmAPIData</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>RmAPIData</servlet-name>
+    <url-pattern>/RmAPIData.do</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>FininshedTable</servlet-name>
+    	<servlet-class>com.prodezy.finishedgoods.FininshedTable</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>FininshedTable</servlet-name>
+    <url-pattern>/finish.do</url-pattern>
+    </servlet-mapping>
+      <servlet>
+    	<servlet-name>Supplier</servlet-name>
+    	<servlet-class>com.prodezy.supplier.Supplier</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>Supplier</servlet-name>
+    <url-pattern>/Supplier.do</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>UtilityTable</servlet-name>
+    	<servlet-class>com.prodezy.utility.UtilityTable</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>UtilityTable</servlet-name>
+    <url-pattern>/UtilityTable.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>ProductCustomer</servlet-name>
+    	<servlet-class>com.prodezy.product_customer.ProductCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>ProductCustomer</servlet-name>
+    <url-pattern>/ProductCustomer.do</url-pattern>
+    </servlet-mapping>
+    
+ 
+  </web-app>
